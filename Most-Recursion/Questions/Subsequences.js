@@ -1,6 +1,6 @@
 function subsequences(s,i,curr){
     if(i == s.length){
-        console.log(curr);
+        console.log(`javaScript method print ${curr}`);
         return;
     }
     subsequences(s,i+1,curr+s[i]); // Take
