@@ -3,6 +3,6 @@ function fib(n){ // recursion function
         return n;
     return fib(n-1) + fib(n-2); // recursion reletion
 }
-for(let i=0; i<=10; i++){
+for(let i=0; i<=15; i++){
     console.log(fib(i));
 }
