@@ -1,0 +1,41 @@
+# what is Linked List?
+>> A linked list is a linear data structure where elements, known as nodes, are stored in a non-contiguous manner in memory. Each node contains the data a reference (or link) to the next node in the sequence.
+
+HEAD --> [DATA][NEXT] --> [DATA][NEXT] --> [DATA][NEXT] --> NULL
+               NODE              NODE            NODE
+
+# Type of Linked List
+>> Singly Linked List  => HEAD --> [DATA][NEXT] --> [DATA][NEXT] --> [DATA][NEXT] --> NULL
+                                         NODE              NODE            NODE
+
+>> Doubly Linked List => NULL <--> [DATA][NEXT] <--> [DATA][NEXT] <--> [DATA][NEXT] <--> NULL
+                                         NODE              NODE            NODE
+
+>> Circular Linked List => HEAD --> [DATA][NEXT] --> [DATA][NEXT] --> [DATA][NEXT] --> HEAD
+                                           NODE              NODE            NODE
+
+# Advantages of Linked List
+>> Dynamic Size : Linked Lists can grow or shrink in size dynamically, allowing efficient memory utilization without the need for resizing.
+
+>> Ease or Insertion/Deletion : Inserting or deleting elements in a linked list is more efficient because it only involves changing the next pointers of nodes, whereas arrays require shifting elements.
+
+>> No Memory Wastage : Arrays can lead to wasted memory space if the allocated array size is larger than the needed capacity. Linked Lists allocate memory as and when it is required.
+
+# Real World Applications
+>> Browser History : Modern was browsers use linked lists to keep track of visited URL's. This allows users to easily navigate forward and backward.
+
+[NULL] <--> [YOUTUBE.COM] <--> [INSTAGRAM.COM] <--> [FACEBOOD.COM] <--> [GOOGLE.COM] <--> [NULL]
+                [NODE]              [NODE]               [NODE]             [NODE]          
+
+>> Music Playlists : Apps like spotify or Apple Music may use linked lists to manage playlists, where each song is a node with a link to the next song.
+
+[NULL] <--> [FIRST SONG] <--> [SECOUND SONG] <--> [THIRD SONG] <--> [FOUR SONG] <--> [NULL]
+               [NODE]             [NODE]              [NODE]           [NODE]          
+
+# Basic Node structure in linked list
+>> class Node{
+    constructor(HEAD){
+        this.HEAD = HEAD;
+        this.next = NULL;
+    }
+}
