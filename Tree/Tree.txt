@@ -1,0 +1,40 @@
+# What is Tree?
+>> A Tree is a hierarchical data structure consisting of nodes, where each node has a value and references to child nodes,with one node serving as the root from which all nodes are accessible.
+
+# Tree Terminologies 
+>> Root Node : Here 'A' is the 'root' node
+In any tree the first node is called as root node
+
+>> Edge Node : In any tree, 'Edge' is a connecting link between two nodes.
+
+>> Parent Node : Here A,B,C,E,& G are Parent nodes
+In any tree the node which has child/children is called 'Parent'
+A node which is predecessor of any other node is called 'Parent'
+
+>> Child Node : Here B & C are children of A 
+                Here G & H are children of C 
+                Here K is child of G
+
+                descendant of any node is called as child node
+
+>> Sibling Nodes :  Here B & C are Sibling
+                    Here D E & F are Sibling
+                    Here G & H are Sibling
+                    Here I & J are Sibling
+
+                    In any tree the nodes which has same Parent are called 'Sibling'
+                    The children of a Parent are called 'Sibling'
+
+>> Leaf Nodes : Here D,I,J,F,K,H are Leaf Nodes
+
+                In any tree the node which does not have children is called 'Leaf'
+                A node without successors is called a 'Leaf' node
+
+>> Degree of a Node :   Here Degree of B is 3
+                        Here Degree of A is 2
+                        Here Degree of F is 0
+                        
+                        In any tree 'Degree' of a node is total number of children it has.
+
+>> Height : In any tree ,'Heightof node' is total number of Edge from leaf to that node in longest path.
+In any tree ,'Height of tree' is the Height of the root node.
