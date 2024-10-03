@@ -38,3 +38,59 @@ A node which is predecessor of any other node is called 'Parent'
 
 >> Height : In any tree ,'Heightof node' is total number of Edge from leaf to that node in longest path.
 In any tree ,'Height of tree' is the Height of the root node.
+
+# Binary Tree 
+>> Ever Node -> max 2 children.
+
+# Complete Binary Tree
+>> All levels fiued ( Except last ) last level -> fiued from left.
+
+# Perfect Binary Tree.
+>> All internal nodes -> 2 children, leaf nodes same level
+
+NOTE ====>
+Preorder ==> Root, Left, Right
+Inorder ==> Left, Root, Right
+Postorder ==> Left, Right, Root
+
+#Inorder Explain :
+let ans = [];
+function Inorder(root){
+    if(root == null){
+        return ans;
+    }
+    Inorder(root.left)
+    ans.push(root)
+    Inorder(root.right)
+    return ans;
+}
+Inorder(root)
+
+#Preorder Explain :
+let ans = [];
+function Preorder(root){
+    if(root == null){
+        return ans;
+    }
+    ans.push(root)
+    Preorder(root.left)
+    Preorder(root.right)
+    return ans;
+}
+Preorder(root)
+
+
+#Preorder Explain :
+let ans = [];
+function Postorder(root){
+    if(root == null){
+        return ans;
+    }
+    Postorder(root.left)
+    Postorder(root.right)
+    ans.push(root)
+    return ans;
+}
+Postorder(root)
+
+And last one "Level Order" BFS (Breadth first search)
